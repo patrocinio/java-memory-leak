@@ -4,5 +4,5 @@ applications:
   instances: 1
   domain: mybluemix.net
   name: MemoryLeak
-  host: memoryleak
+  host: memoryleak-${random-word}
   disk_quota: 1024M
