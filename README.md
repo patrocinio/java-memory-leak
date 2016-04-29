@@ -13,9 +13,21 @@ This project contains a Cloud Foundry application, with a terrible memory leak. 
 
     cf push
     
-3. Follow the application crashing in a few minutes:
+3. Open the application log:
 
     cf logs application-name
+
+4. Now the application will start leaking after you open the main web page. So either open a browser window to the application's URL or run 
+
+    wget application-URL
+ 
+5. Watch the log file showing the application allocating lots of memory and crashing
+
+6. Stop the application
+
+    cf stop application-name  
+
+
 
 
 # Notice
