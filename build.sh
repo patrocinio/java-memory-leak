@@ -1,5 +1,5 @@
 COMPONENT=pojo
-VERSION=1.0
+VERSION=1.2
 
 echo Building component $COMPONENT at version $VERSION
 cd src/$COMPONENT
