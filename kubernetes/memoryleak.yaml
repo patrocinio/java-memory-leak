@@ -4,7 +4,6 @@ metadata:
   labels:
     k8s-app: memoryleak
   name: memoryleak
-  namespace: kube-system
 spec:
   replicas: 1
   revisionHistoryLimit: 10
