@@ -17,7 +17,7 @@ spec:
         k8s-app: memoryleak2
     spec:
       containers:
-      - name: memoryleak
+      - name: memoryleak2
         image: patrocinio/memoryleak:latest
         resources:
           limits:
