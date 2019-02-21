@@ -2,22 +2,22 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   labels:
-    k8s-app: memoryleak2
-  name: memoryleak2
+    k8s-app: memoryleak
+  name: memoryleak
   namespace: kube-system
 spec:
   replicas: 1
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      k8s-app: memoryleak2
+      k8s-app: memoryleak
   template:
     metadata:
       labels:
-        k8s-app: memoryleak2
+        k8s-app: memoryleak
     spec:
       containers:
-      - name: memoryleak2 
+      - name: memoryleak
         image: patrocinio/memoryleak:latest
         resources:
           limits:
